@@ -7,7 +7,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require statch/addresses
+$ composer require stacht/addresses
 ```
 
 ## Usage
@@ -39,5 +39,5 @@ If you discover any security related issues, please email corrado.striuli@gmail.
 
 MIT. Please see the [license file](license.md) for more information.
 
-[link-author]: https://bitbucket.com/statch
+[link-author]: https://bitbucket.com/stacht
 [link-contributors]: ../../contributors

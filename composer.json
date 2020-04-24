@@ -1,13 +1,13 @@
 {
-    "name": "statch/addresses",
+    "name": "stacht/addresses",
     "description": ":description",
     "license": "MIT",
     "authors": [{
         "name": "Corrado Striuli",
         "email": "corrado.striuli@gmail.com"
     }],
-    "homepage": "https://bitbucket.com/statch/addresses",
-    "keywords": ["Laravel", "Addresses", "Statch"],
+    "homepage": "https://bitbucket.com/stacht/addresses",
+    "keywords": ["Laravel", "Addresses", "Stacht"],
     "require": {
         "php": "^7.2",
         "illuminate/support": "~5.8.0|^6.0|^7.0"
@@ -19,18 +19,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Statch\\Addresses\\": "src/"
+            "Stacht\\Addresses\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Statch\\Addresses\\Tests\\": "tests"
+            "Stacht\\Addresses\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Statch\\Addresses\\AddressesServiceProvider"
+                "Stacht\\Addresses\\AddressesServiceProvider"
             ]
         }
     }

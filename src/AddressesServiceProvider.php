@@ -1,9 +1,9 @@
 <?php
 
-namespace Statch\Addresses;
+namespace Stacht\Addresses;
 
 use Illuminate\Support\ServiceProvider;
-use Statch\Addresses\Models\Address;
+use Stacht\Addresses\Models\Address;
 
 class AddressesServiceProvider extends ServiceProvider
 {
@@ -25,7 +25,7 @@ class AddressesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/statch-addresses.php', 'statch-addresses');
+        $this->mergeConfigFrom(__DIR__.'/../config/stacht-addresses.php', 'stacht-addresses');
 
         // Register the service the package provides.
         $this->app->singleton('addresses', function ($app) {
@@ -50,7 +50,7 @@ class AddressesServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/statch-addresses.php' => config_path('statch-addresses.php'),
+            __DIR__.'/../config/stacht-addresses.php' => config_path('stacht-addresses.php'),
         ], 'config');
 
         // Publishing the migration file.

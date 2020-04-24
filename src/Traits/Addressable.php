@@ -1,6 +1,6 @@
 <?php
 
-namespace Statch\Addresses\Traits;
+namespace Stacht\Addresses\Traits;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Collection;
@@ -44,7 +44,7 @@ trait Addressable
      */
     public function addresses(): MorphMany
     {
-        return $this->morphMany(\Statch\Addresses\Models\Address::class, 'addressable');
+        return $this->morphMany(\Stacht\Addresses\Models\Address::class, 'addressable');
     }
 
 }

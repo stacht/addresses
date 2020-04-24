@@ -1,6 +1,6 @@
 <?php
 
-namespace Statch\Addresses\Models;
+namespace Stacht\Addresses\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -165,7 +165,7 @@ class Address extends Model
         parent::boot();
 
         static::saving(function (self $address) {
-            if (config('statch.addressable.geocode')) {
+            if (config('stacht.addressable.geocode')) {
                 $segments[] = $address->street;
                 $segments[] = sprintf('%s, %s %s', $address->city, $address->state, $address->postal_code);
                 // $segments[] = country($address->country_code)->getName();
