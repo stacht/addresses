@@ -17,7 +17,7 @@ class CreateAddressesTable extends Migration
             $table->string('label')->nullable();
             $table->morphs('addressable');
             $table->string('given_name');
-            $table->string('family_name');
+            $table->string('family_name')->nullable();
             $table->string('organization')->nullable();
             $table->string('address1');
             $table->string('address2')->nullable();
