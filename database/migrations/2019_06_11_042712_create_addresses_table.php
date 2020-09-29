@@ -12,7 +12,7 @@ class CreateAddressesTable extends Migration
     public function up()
     {
         Schema::create('addresses', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             // $table->enum('type', ['primary', 'billing', 'shipping', 'warehouse'])->default('primary');
             $table->string('label')->nullable();
             $table->morphs('addressable');
